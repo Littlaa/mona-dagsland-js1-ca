@@ -20,7 +20,12 @@ async function callDetails() {
     setTimeout(function () {
       detailContainer.innerHTML = "";
 
-      detailContainer.innerHTML += `<h1>${details.name}</h1>`;
+      detailContainer.innerHTML += `<h1>${details.name}</h1>
+                                    <div>
+                                    <p>Description: ${details.description}</p>
+                                    <p>How to get: ${details.howToGet}</p>
+                                    <p>Source: ${details.source}</p>
+                                    </div>`;
     }, 1000);
   } catch (error) {
     console.log(error);
