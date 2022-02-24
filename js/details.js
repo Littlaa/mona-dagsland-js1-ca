@@ -1,7 +1,7 @@
 const detailContainer = document.querySelector(".card_details");
 
-const querystring = document.location.search;
-const parameter = new URLSearchParams(querystring);
+const queryString = document.location.search;
+const parameter = new URLSearchParams(queryString);
 const cardId = parameter.get("cardBackId");
 
 const url = "https://omgvamp-hearthstone-v1.p.rapidapi.com/" + cardId;
