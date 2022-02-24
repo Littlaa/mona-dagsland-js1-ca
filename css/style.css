@@ -1,6 +1,12 @@
-nav {
+.navbar {
   margin: 50px;
   text-align: center;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -21,7 +27,7 @@ h1 {
   margin: 10px;
   padding: 10px;
   min-width: 250px;
-  background: #f0851a;
+  background: #a97148;
   border-radius: 20px;
 }
 
@@ -29,11 +35,12 @@ h1 {
   border: 4px double #611200;
   padding: 15px;
   background: #e9967a;
+  margin-left: 37%;
 }
 
 .loading {
   border: 25px solid #f3f3f3;
-  border-top: 25px solid #f0851a;
+  border-top: 25px solid #a97148;
   border-radius: 100%;
   width: 80px;
   height: 80px;
