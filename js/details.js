@@ -12,21 +12,24 @@ const key = {
   },
 };
 
-console.log(url);
+console.log(url, key);
 
 async function callDetails() {
   try {
     const response = await fetch(url, key);
     const details = await response.json();
+    const results = details.shift();
+
+    console.log(details);
 
     setTimeout(function () {
       detailContainer.innerHTML = "";
 
-      detailContainer.innerHTML += `<h1>${details.name}</h1>
-                                    <div>
-                                    <p>Type: ${details.type}</p>
-                                    <p>Rarity: ${details.rarity}</p>
-                                    <p>Text: ${details.flavor}</p>
+      detailContainer.innerHTML += `<h1>${results.name}</h1>
+                                    <div class="result">
+                                    <p>Type: ${results.type}</p>
+                                    <p>Text: ${results.text}</p>
+                                    <p>Player class: ${results.playerClass}</p>
                                     </div>`;
     }, 1000);
   } catch (error) {
@@ -36,3 +39,5 @@ async function callDetails() {
 }
 
 callDetails();
+
+//https://www.codegrepper.com/code-examples/javascript/get+first+item+in+array+javascript

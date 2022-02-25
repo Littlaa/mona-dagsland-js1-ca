@@ -1,4 +1,4 @@
-const url = "https://omgvamp-hearthstone-v1.p.rapidapi.com/cardbacks";
+const url = "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards";
 const key = {
   headers: {
     "x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
@@ -12,7 +12,7 @@ async function callHeartstone() {
   try {
     const response = await fetch(url, key);
     const results = await response.json();
-    const cards = results;
+    const cards = results.Classic;
 
     setTimeout(function () {
       resultsContainer.innerHTML = "";
@@ -23,9 +23,9 @@ async function callHeartstone() {
         }
 
         resultsContainer.innerHTML += `<a href="details.html?cardId=${cards[i].cardId}" class="result">
-                                        <p>Card ID: ${cards[i].cardBackId}</p>
                                         <p>Name: ${cards[i].name}</p>
-                                        <p>Category: ${cards[i].sortCategory}</p>
+                                        <p>Card set: ${cards[i].cardSet}</p>
+                                        <p>Type: ${cards[i].type}</p>
                                         </a>`;
       }
     }, 1000);
