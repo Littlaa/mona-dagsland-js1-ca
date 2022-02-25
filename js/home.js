@@ -37,6 +37,5 @@ async function callHeartstone() {
 
 callHeartstone();
 
-//<img src=${cards[i].img} tried this in the inner.html but the images wouldn't show because of access denied.
-//I had 314 API calls so I took it down to 12 since we had to make details page for every results. Hope that was OK.
+//I had a very long API call so I took it down to 12 because of loading. Hope that was OK.
 //https://rapidapi.com/omgvamp/api/hearthstone/
