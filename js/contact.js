@@ -34,8 +34,6 @@ function formValidation() {
   } else {
     addressError.style.display = "block";
   }
-
-  console.log("hello");
 }
 
 contactForm.addEventListener("submit", formValidation);
