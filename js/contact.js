@@ -51,3 +51,6 @@ function emailValidation(email) {
   const emailMatch = regEx.test(email);
   return emailMatch;
 }
+
+//Source used:
+//Have used the lessons to finished this CA.
