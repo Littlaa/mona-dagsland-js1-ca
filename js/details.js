@@ -40,4 +40,6 @@ async function callDetails() {
 
 callDetails();
 
+//Source used:
+//Have used the lessons to finished this CA.
 //https://www.codegrepper.com/code-examples/javascript/get+first+item+in+array+javascript

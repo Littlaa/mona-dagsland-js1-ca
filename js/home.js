@@ -18,9 +18,9 @@ async function callHeartstone() {
       resultsContainer.innerHTML = "";
 
       for (let i = 0; i < cards.length; i++) {
-        if (i === 12) {
-          break;
-        }
+        // if (i === 12) {
+        //   break;
+        // }
 
         resultsContainer.innerHTML += `<a href="details.html?cardId=${cards[i].cardId}" class="result">
                                         <p>Name: ${cards[i].name}</p>
@@ -38,4 +38,6 @@ async function callHeartstone() {
 callHeartstone();
 
 //I had a very long API call so I took it down to 12 because of loading. Hope that was OK.
+//Source used:
+//Have used the lessons to finished this CA.
 //https://rapidapi.com/omgvamp/api/hearthstone/

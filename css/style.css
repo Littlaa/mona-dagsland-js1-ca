@@ -1,6 +1,20 @@
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  word-spacing: 100px;
+  font-size: 18px;
+  background-color: #a97148;
+  border-radius: 20px;
+  margin: 20px;
+}
+
 .navbar {
   margin: 50px;
   text-align: center;
+}
+
+.nav_a {
   text-decoration: underline;
 }
 
