@@ -20,7 +20,7 @@ async function callHeartstone() {
       for (let i = 0; i < cards.length; i++) {
         // if (i === 12) {
         //   break;
-        // }
+        // } 
 
         resultsContainer.innerHTML += `<a href="details.html?cardId=${cards[i].cardId}" class="result">
                                         <p>Name: ${cards[i].name}</p>
